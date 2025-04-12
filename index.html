@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8d62f5790e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </nav>
+        <div class="header-text">
+            <P>Student</P>
+            <h1>Hi, I'm <span>Ali Miyan MC</span></h1>
+        </div>
+
+
+    </div>
+
+
+</div>   
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, I'm Ali Miyan from Kerala, India. I'm currently pursuing a B.Tech in Computer Science and Engineering
+                    with a specialization in Data Science. I have a deep passion for exploring the dynamic world of technology,
+                    especially the evolving field of data science. I enjoy diving into data, uncovering patterns, and building 
+                    intelligent solutions that can make a real impact. Always eager to learn and grow, I constantly explore new
+                    tools, techniques, and trends to stay ahead in my field.
+
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>DAA</span><br>Design Analysis and Algorithm</li>
+                        <li><span>DBMS</span><br>MYSQL</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2017-2021</span><br>None</li>
+                        <li><span>N/A</span><br>N/A</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2011 - 2013</span><br>Radhwa International School</li>
+                        <li><span>2013 - 2021</span><br>Al Manar International School</li>
+                        <li><span>2021 - 2023</span><br>Radhwa International School</li>
+                        <li><span>2023 - 2027</span><br>B-Tech CSE from SRM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- ---------services------- -->
+  <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-user-tie"></i>                <h2>create portfolio</h2>
+                <p>A portfolio website is a personal site that showcases your skills,<br>
+                projects, and experience — like a digital resume with personality! <br>
+                It's especially useful for developers, designers, writers, and creatives<br>
+                to showcase their work to potential employers or clients.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Data Analysis</h2>
+                <p>Data analysis is the process of collecting, organizing, and interpreting <br>
+                data to uncover useful insights, patterns, and trends. It's used to make informed decisions,<br>
+                solve problems, and support business strategies.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Design web</h2>
+                <p>Web designing is the process of creating the layout, visual appearance, and usability of a website.<br>
+                 It involves designing user interfaces (UI) that are both attractive and easy to navigate, ensuring a great <br>
+                 user experience (UX) across different devices</p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+
+    </div>
+  </div>
+  <!----------portfolio-------->
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="worklist">
+            <div class="work">
+                <img src="images/work-1.png">
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+            </div>
+
+        </div>
+
+    </div>
+  </div>
+
+
+
+
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link")
+    document.getElementById(tabname).classList.add("active-tab")
+}   
+</script>
+
+</body>
+</html>
