@@ -4,6 +4,9 @@
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: #eef2f6;
     color: #080808;
@@ -253,4 +256,96 @@ nav ul li a:hover::after{
 .work:hover .layer{
     height: 100%;
 }
+.btn{
+    display: block;
+    margin: 10px auto;
+    width: fit-content;
+    border: 12px solid #0e325d;
+    padding: 10px 80px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #090909;
+    transition: background 0.5s;
+    font-size: 50px;
+    font-weight: 70;
 
+}
+.btn:hover{
+    background: #1b4c87;
+
+}
+/*----------contact--------*/
+
+.contact-left{
+    flex-basis: 30%;
+    margin-bottom: 100px;
+}
+.contact-right{
+    flex-basis: 50%;
+}
+.contact-left p{
+    margin-top: 70px;
+    font-size: 70px;
+}
+.contact-left p i{
+    color: #0a284e;
+    margin-right: 50px;
+    font-size: 70px;
+}
+.social-icons{
+    margin-top: 80px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 90px;
+    margin-right: 70px;
+    color: #0a284e;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #3c1883;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    margin-top: 80px;
+    display: inline-block;
+    background: #1b4c87;
+}
+.contact-right form{
+    width: 90%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #39434a;
+    padding: 40px;
+    margin: 10px 0;
+    color: #0e0d0d;
+    font-size: 50px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+form btn2{
+    margin-top: 30px;
+    padding: 20x 30px;
+    font-size: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 70px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 250px;
+    font-size: 50px;
+    color: #d7c9c6;
+}
+/*--------------css for small screeens-----------*/
+@media only screen and (max-with: 600px){
+
+}
