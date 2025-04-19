@@ -81,6 +81,25 @@ nav ul li a:hover::after {
     margin-top: 20px;
     color: #600;
 }
+.typewriter {
+    overflow: hidden;             /* Hide the text as it types */
+    border-right: 3px solid #600; /* Cursor effect */
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    animation: typing 3s steps(22), blink 0.7s step-end infinite;
+    width: 0; /* Start at 0 width to animate typing */
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 18ch } /* Adjust based on number of characters */
+  }
+  
+  @keyframes blink {
+    50% { border-color: transparent }
+  }
+  
 
 
 .header-text h1 span {
