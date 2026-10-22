@@ -277,17 +277,41 @@ nav ul li a:hover::after {
 }
 
 .services-list div {
+    position: relative;
+    overflow: hidden;
     background: #fffefe;
     padding: 30px;
     font-size: 14px;
     font-weight: 400;
     border-radius: 20px;
-    transition: background 0.5s, transform 0.5s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    /* ScrollReveal writes its own inline transition and transform on these cards, which used to
+       block the hover lift. We lift with `translate` (a separate property) and restate the
+       transition list with !important so the reveal animation and the hover both work. */
+    transition: background 0.4s, translate 0.4s, box-shadow 0.4s,
+                opacity 1.5s cubic-bezier(0.5, 0, 0, 1) 0.18s,
+                transform 1.5s cubic-bezier(0.5, 0, 0, 1) 0.18s !important;
+}
+
+/* maroon accent bar that slides in along the top edge on hover */
+.services-list div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #600;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s;
 }
 
 .services-list div i {
+    display: inline-block;
     font-size: 48px;
     margin-bottom: 20px;
+    transition: transform 0.4s, color 0.4s;
 }
 
 .services-list div h2 {
@@ -309,9 +333,40 @@ nav ul li a:hover::after {
     display: inline-block;
 }
 
+.services-list div a::after {
+    content: "\2192";
+    display: inline-block;
+    margin-left: 6px;
+    transition: transform 0.3s;
+}
+
 .services-list div:hover {
     background: #d7c9c6;
-    transform: translateY(-10px);
+    translate: 0 -10px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.14);
+}
+
+.services-list div:hover::before {
+    transform: scaleX(1);
+}
+
+.services-list div:hover i {
+    color: #600;
+    transform: scale(1.15) rotate(-6deg);
+}
+
+.services-list div:hover a::after {
+    transform: translateX(6px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .services-list div:hover {
+        translate: none;
+    }
+
+    .services-list div:hover i {
+        transform: none;
+    }
 }
 
 /* ===== PORTFOLIO ===== */
@@ -393,7 +448,8 @@ nav ul li a:hover::after {
     display: block;
     margin: 40px auto 0;
     width: fit-content;
-    border: 2px solid #0e325d;
+    border: 2px solid #600;
+    background: rgba(255, 255, 255, 0.6);
     padding: 10px 30px;
     border-radius: 6px;
     text-decoration: none;
@@ -403,8 +459,11 @@ nav ul li a:hover::after {
     transition: background 0.5s;
 }
 
-.btn:hover {
-    background: #1b4c87;
+.btn:hover,
+.btn.btn2:hover,
+form .btn2:hover {
+    background: #600;
+    border-color: #600;
     color: #fff;
 }
 
@@ -453,8 +512,8 @@ nav ul li a:hover::after {
 }
 
 .btn.btn2 {
-    background: #1b4c87;
-    color: #fff;
+    background: rgba(255, 255, 255, 0.6);
+    color: #090909;
 }
 
 .contact-right form {
@@ -480,8 +539,8 @@ form .btn2 {
     margin-top: 10px;
     cursor: pointer;
     display: inline-block;
-    background: #1b4c87;
-    color: #fff;
+    background: rgba(255, 255, 255, 0.6);
+    color: #090909;
 }
 
 /* ===== FOOTER ===== */
