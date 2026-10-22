@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=3">
     <script src="https://kit.fontawesome.com/8d62f5790e.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -252,24 +252,27 @@
     });
 </script>
 
-<script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+<script src="scrollreveal.min.js"></script>
 <script>
-    ScrollReveal({
-        reset: false,
-        distance: '60px',
-        duration: 1500,
-        delay: 180
-    });
+    // Scroll animations are optional: if the library fails to load, the page still works normally.
+    if (window.ScrollReveal) {
+        ScrollReveal({
+            reset: false,
+            distance: '60px',
+            duration: 1500,
+            delay: 180
+        });
 
-    ScrollReveal().reveal('.header-text', { origin: 'top' });
-    ScrollReveal().reveal('.about-col-1', { origin: 'left' });
-    ScrollReveal().reveal('.about-col-2', { origin: 'right' });
-    // Only animate the tab titles and the Skills panel. The other panels start hidden (display:none),
-    // so ScrollReveal would leave them at opacity 0 and they would show up blank.
-    ScrollReveal().reveal('.tab-titles, #skills', { origin: 'bottom', interval: 200 });
-    ScrollReveal().reveal('.services-list div', { origin: 'bottom', interval: 300 });
-    ScrollReveal().reveal('.work', { origin: 'bottom', interval: 300 });
-    ScrollReveal().reveal('.contact-left, .contact-right', { origin: 'left', interval: 300 });
+        ScrollReveal().reveal('.header-text', { origin: 'top' });
+        ScrollReveal().reveal('.about-col-1', { origin: 'left' });
+        ScrollReveal().reveal('.about-col-2', { origin: 'right' });
+        // Only animate the tab titles and the Skills panel. The other panels start hidden (display:none),
+        // so ScrollReveal would leave them at opacity 0 and they would show up blank.
+        ScrollReveal().reveal('.tab-titles, #skills', { origin: 'bottom', interval: 200 });
+        ScrollReveal().reveal('.services-list div', { origin: 'bottom', interval: 300 });
+        ScrollReveal().reveal('.work', { origin: 'bottom', interval: 300 });
+        ScrollReveal().reveal('.contact-left, .contact-right', { origin: 'left', interval: 300 });
+    }
 </script>
 </body>
 </html>
