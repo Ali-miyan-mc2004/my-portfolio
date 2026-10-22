@@ -111,6 +111,63 @@ nav ul li a:hover::after {
     color: #600;
 }
 
+.header-text .hero-sub {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
+    max-width: 520px;
+    margin-top: 18px;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 28px;
+}
+
+.hero-actions .btn {
+    margin: 0;
+    background: rgba(255, 255, 255, 0.6);
+    border-color: #600;
+}
+
+.hero-actions .btn,
+.hero-actions .btn.btn2 {
+    background: rgba(255, 255, 255, 0.6);
+    color: #090909;
+}
+
+.hero-actions .btn:hover,
+.hero-actions .btn.btn2:hover {
+    background: #600;
+    border-color: #600;
+    color: #fff;
+}
+
+.hero-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 40px;
+    margin-top: 44px;
+}
+
+.hero-stats strong {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    color: #600;
+    line-height: 1.2;
+}
+
+.hero-stats span {
+    display: block;
+    font-size: 14px;
+    color: #444;
+    max-width: 150px;
+    line-height: 1.4;
+}
+
 /* ===== ABOUT ===== */
 #about {
     padding: 60px 0;
@@ -151,7 +208,8 @@ nav ul li a:hover::after {
 
 .tab-titles {
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 14px 30px;
     margin: 20px 0 30px;
 }
 
@@ -186,6 +244,16 @@ nav ul li a:hover::after {
 .tab-contents ul li span {
     color: #600;
     font-weight: bold;
+}
+
+.tab-contents ul.entry-points {
+    margin-top: 8px;
+    padding-left: 22px;
+}
+
+.tab-contents ul.entry-points li {
+    list-style: disc;
+    margin: 6px 0;
 }
 
 .tab-contents {
@@ -575,6 +643,14 @@ button:focus-visible,
 
     .header-text h1 {
         font-size: 30px;
+    }
+
+    .header-text .hero-sub {
+        font-size: 16px;
+    }
+
+    .hero-stats {
+        display: none;
     }
 
     nav .fa-solid {

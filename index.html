@@ -28,8 +28,17 @@
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p>Student</p>
             <h1>Hi, I'm <span>Ali Miyan MC</span></h1>
+            <p class="hero-sub">I build machine learning systems, data pipelines and AI tools that turn messy data into something people can actually use.</p>
+            <div class="hero-actions">
+                <a href="#portfolio" class="btn btn2">View My Work</a>
+                <a href="images/my-resume.pdf" download="Ali-Miyan-MC-Resume.pdf" class="btn">Download Resume</a>
+            </div>
+            <div class="hero-stats">
+                <div><strong>9.23</strong><span>CGPA, B.Tech CSE</span></div>
+                <div><strong>0.96</strong><span>ROC-AUC, fraud model</span></div>
+                <div><strong>~65%</strong><span>queries automated, AI/ML intern</span></div>
+            </div>
         </div>
     </div>
 </div>
@@ -52,6 +61,7 @@
                     <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
                     <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
                     <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    <p class="tab-links" onclick="opentab(event, 'certifications')">Certifications</p>
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
@@ -62,16 +72,39 @@
                 </div>
                 <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>Dec 2025 – Jan 2026</span><br>AI/ML Intern, SpeechLogix Technologies Pvt. Ltd.</li>
-                        <li><span>What I built</span><br>Voice assistant call flows on Asterisk (PBX) that resolved ~65% of common queries in pilot testing</li>
+                        <li><span>AI/ML Intern</span> &middot; Dec 2025 – Jan 2026<br>SpeechLogix Technologies Pvt. Ltd.
+                            <ul class="entry-points">
+                                <li>Built components of an AI-powered voice assistant on Asterisk (PBX) that handled ~400 automated customer calls in pilot testing, resolving ~65% of common queries without human intervention.</li>
+                                <li>Designed 6 voice-based call flows with escalation logic that routed complex cases to human agents with conversation context, reducing average handling time by ~15%.</li>
+                                <li>Cut agent workload by an estimated 8–10 hours/week by automating repetitive queries.</li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>2011 - 2013</span><br>Radhwa International School</li>
-                        <li><span>2013 - 2021</span><br>Al Manar International School</li>
-                        <li><span>2021 - 2023</span><br>Radhwa International School</li>
-                        <li><span>2023 - Present</span><br>B.Tech CSE (Data Science), SRM Institute of Science and Technology</li>
+                        <li><span>B.Tech in Computer Science and Engineering (Data Science)</span><br>SRM Institute of Science and Technology, Chennai &middot; Aug 2023 – Present
+                            <ul class="entry-points">
+                                <li>CGPA: 9.23</li>
+                                <li>Relevant coursework: Design and Analysis of Algorithms, Database Management Systems (MySQL), Web Application Development</li>
+                            </ul>
+                        </li>
+                        <li><span>Grade 12</span><br>Radhwa International School, Yanbu, KSA &middot; 2021 – May 2023
+                            <ul class="entry-points">
+                                <li>Percentage: 77.4%</li>
+                            </ul>
+                        </li>
+                        <li><span>Schooling</span><br>Al Manar International School &middot; 2013 – 2021<br>Radhwa International School &middot; 2011 – 2013</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <li><span>Data Analyst – SAP Analytics Cloud</span><br>SAP</li>
+                        <li><span>Tableau for Data-Driven Decision-Making</span><br>Coursera</li>
+                        <li><span>Computer Networking</span><br>Cisco</li>
+                        <li><span>Machine Learning</span><br>NPTEL</li>
+                        <li><span>DBMS: Master the Fundamentals and Advanced Concepts</span><br>Scaler</li>
+                        <li><span>Hadoop and Big Data Analytics</span><br>Simplilearn</li>
                     </ul>
                 </div>
             </div>
@@ -85,29 +118,22 @@
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
             <div>
-                <i class="fa-solid fa-user-tie"></i>
-                <h2>Create Portfolio</h2>
-                <p>A portfolio website is a personal site that showcases your skills,
-                projects, and experience — like a digital resume with personality!
-                It's especially useful for developers, designers, writers, and creatives
-                to showcase their work to potential employers or clients.</p>
-                <a href="#contact">Learn more</a>
+                <i class="fa-solid fa-gears"></i>
+                <h2>Workflow Automation</h2>
+                <p>I find the slow, repetitive steps in a team's day and replace them with simple scripts and tools. At SpeechLogix, automating routine queries cut agent workload by an estimated 8–10 hours a week.</p>
+                <a href="#about">See my experience</a>
             </div>
             <div>
-                <i class="fa-solid fa-database"></i>
-                <h2>Data Analysis</h2>
-                <p>Data analysis is the process of collecting, organizing, and interpreting
-                data to uncover useful insights, patterns, and trends. It's used to make informed decisions,
-                solve problems, and support business strategies.</p>
-                <a href="#portfolio">Learn more</a>
+                <i class="fa-solid fa-robot"></i>
+                <h2>AI Tool Integration</h2>
+                <p>I test AI tools and LLMs on real tasks, then connect the best ones into a workflow with guardrails. My LangGraph assistant lets anyone query a database in plain English using read-only, validated SQL.</p>
+                <a href="https://github.com/Ali-miyan-mc2004/sales-ai-insights-platform" target="_blank" rel="noopener noreferrer">See the project</a>
             </div>
             <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Design Web</h2>
-                <p>Web designing is the process of creating the layout, visual appearance, and usability of a website.
-                It involves designing user interfaces (UI) that are both attractive and easy to navigate, ensuring a great
-                user experience (UX) across different devices.</p>
-                <a href="#contact">Learn more</a>
+                <i class="fa-solid fa-rocket"></i>
+                <h2>Prototypes &amp; Deployment</h2>
+                <p>I turn ideas into working web apps that people can open and use, not just notebooks. My fraud detection model runs as a Streamlit app that scores transactions in real time.</p>
+                <a href="https://github.com/Ali-miyan-mc2004/fraud-detection-ml" target="_blank" rel="noopener noreferrer">See the project</a>
             </div>
         </div>
     </div>
@@ -238,7 +264,9 @@
     ScrollReveal().reveal('.header-text', { origin: 'top' });
     ScrollReveal().reveal('.about-col-1', { origin: 'left' });
     ScrollReveal().reveal('.about-col-2', { origin: 'right' });
-    ScrollReveal().reveal('.tab-titles, .tab-contents', { origin: 'bottom', interval: 200 });
+    // Only animate the tab titles and the Skills panel. The other panels start hidden (display:none),
+    // so ScrollReveal would leave them at opacity 0 and they would show up blank.
+    ScrollReveal().reveal('.tab-titles, #skills', { origin: 'bottom', interval: 200 });
     ScrollReveal().reveal('.services-list div', { origin: 'bottom', interval: 300 });
     ScrollReveal().reveal('.work', { origin: 'bottom', interval: 300 });
     ScrollReveal().reveal('.contact-left, .contact-right', { origin: 'left', interval: 300 });
