@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Ali Miyan M C | Data Science &amp; Machine Learning</title>
+    <meta name="description" content="Portfolio of Ali Miyan M C, B.Tech CSE (Data Science) student building machine learning and data engineering projects.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/8d62f5790e.js" crossorigin="anonymous"></script>
 </head>
@@ -12,7 +16,7 @@
 <div id="header">
     <div class="container">
         <nav>
-            <img src="images/logo.png" class="logo">
+            <img src="images/logo.png" class="logo" alt="Logo">
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -22,51 +26,44 @@
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-
         </nav>
         <div class="header-text">
-            <P>Student</P>
-            <h1 class>Hi, I'm <span>Ali Miyan MC</span></h1>
+            <p>Student</p>
+            <h1>Hi, I'm <span>Ali Miyan MC</span></h1>
         </div>
-
-
     </div>
+</div>
 
-
-</div>   
 <div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/user.png" >
+                <img src="images/user.png" alt="Portrait of Ali Miyan M C">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
                 <p>Hi, I'm Ali Miyan from Kerala, India. I'm currently pursuing a B.Tech in Computer Science and Engineering
-                    with a specialization in Data Science. I have a deep passion for exploring the dynamic world of technology,
-                    especially the evolving field of data science. I enjoy diving into data, uncovering patterns, and building 
+                    with a specialization in Data Science (CGPA 9.23). I have a deep passion for exploring the dynamic world of technology,
+                    especially the evolving field of data science. I enjoy diving into data, uncovering patterns, and building
                     intelligent solutions that can make a real impact. Always eager to learn and grow, I constantly explore new
                     tools, techniques, and trends to stay ahead in my field.
-
                 </p>
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                    
+                    <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>DAA</span><br>Design Analysis and Algorithm</li>
-                        <li><span>DBMS</span><br>MYSQL</li>
-                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>Languages</span><br>Python, SQL, C++, Java, JavaScript</li>
+                        <li><span>Data &amp; Machine Learning</span><br>Pandas, NumPy, PySpark, Scikit-learn, SMOTE, SHAP, Power BI</li>
+                        <li><span>Web &amp; Databases</span><br>React, Node.js, Express.js, Streamlit, MySQL, PostgreSQL, MongoDB</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>2017-2021</span><br>None</li>
-                        <li><span>N/A</span><br>N/A</li>
-                        
+                        <li><span>Dec 2025 – Jan 2026</span><br>AI/ML Intern, SpeechLogix Technologies Pvt. Ltd.</li>
+                        <li><span>What I built</span><br>Voice assistant call flows on Asterisk (PBX) that resolved ~65% of common queries in pilot testing</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
@@ -74,209 +71,177 @@
                         <li><span>2011 - 2013</span><br>Radhwa International School</li>
                         <li><span>2013 - 2021</span><br>Al Manar International School</li>
                         <li><span>2021 - 2023</span><br>Radhwa International School</li>
-                        <li><span>2023 - 2027</span><br>B-Tech CSE from SRM</li>
+                        <li><span>2023 - Present</span><br>B.Tech CSE (Data Science), SRM Institute of Science and Technology</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
- <!-- ---------services------- -->
-  <div id="services">
+
+<!-- ---------services------- -->
+<div id="services">
     <div class="container">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
             <div>
-                <i class="fa-solid fa-user-tie"></i>                <h2>create portfolio</h2>
-                <p>A portfolio website is a personal site that showcases your skills,<br>
-                projects, and experience — like a digital resume with personality! <br>
-                It's especially useful for developers, designers, writers, and creatives<br>
+                <i class="fa-solid fa-user-tie"></i>
+                <h2>Create Portfolio</h2>
+                <p>A portfolio website is a personal site that showcases your skills,
+                projects, and experience — like a digital resume with personality!
+                It's especially useful for developers, designers, writers, and creatives
                 to showcase their work to potential employers or clients.</p>
-                <a href="#">Learn more</a>
+                <a href="#contact">Learn more</a>
             </div>
             <div>
                 <i class="fa-solid fa-database"></i>
                 <h2>Data Analysis</h2>
-                <p>Data analysis is the process of collecting, organizing, and interpreting <br>
-                data to uncover useful insights, patterns, and trends. It's used to make informed decisions,<br>
+                <p>Data analysis is the process of collecting, organizing, and interpreting
+                data to uncover useful insights, patterns, and trends. It's used to make informed decisions,
                 solve problems, and support business strategies.</p>
-                <a href="#">Learn more</a>
+                <a href="#portfolio">Learn more</a>
             </div>
             <div>
                 <i class="fa-solid fa-code"></i>
-                <h2>Design web</h2>
-                <p>Web designing is the process of creating the layout, visual appearance, and usability of a website.<br>
-                 It involves designing user interfaces (UI) that are both attractive and easy to navigate, ensuring a great <br>
-                 user experience (UX) across different devices</p>
-                <a href="#">Learn more</a>
+                <h2>Design Web</h2>
+                <p>Web designing is the process of creating the layout, visual appearance, and usability of a website.
+                It involves designing user interfaces (UI) that are both attractive and easy to navigate, ensuring a great
+                user experience (UX) across different devices.</p>
+                <a href="#contact">Learn more</a>
             </div>
-
         </div>
-
     </div>
-  </div>
-  <!----------portfolio-------->
-  <div id="portfolio">
+</div>
+
+<!----------portfolio-------->
+<div id="portfolio">
     <div class="container">
         <h1 class="sub-title">My Work</h1>
         <div class="worklist">
             <div class="work">
-                <img src="images/work-1.png">
+                <img src="images/work-1.png" alt="Credit Card Fraud Detection System screenshot">
                 <div class="layer">
-                    <h3>Credit Card Fraud Detection APP</h3>
-                    <p>A credit card fraud detection app built using Python leverages data
-                        analysis and machine learning to identify suspicious transactions in real-time. 
-                        It uses historical transaction data to train models that flag anomalies and reduce fraudulent activity.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-
-                    
+                    <h3>Credit Card Fraud Detection System</h3>
+                    <p>Fraud detection on 280K+ real transactions (0.17% fraud) using SMOTE on training data only.
+                        The final model reaches 87% fraud recall and 0.96 ROC-AUC, deployed as a Streamlit app.</p>
+                    <a href="https://github.com/Ali-miyan-mc2004/fraud-detection-ml" target="_blank" rel="noopener noreferrer" aria-label="View Credit Card Fraud Detection System on GitHub"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="images/work-2.png">
+                <img src="images/work-2.png" alt="Sales and AI Insights Platform screenshot">
                 <div class="layer">
-                    <h3>Finance Tracker</h3>
-                    <p>A finance tracker app built with Java and MySQL to help users manage income,
-                        expenses, and savings. It features real-time updates and simple visualizations.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-
-                    
+                    <h3>Sales &amp; AI Insights Platform</h3>
+                    <p>A PySpark ETL pipeline loads 15K+ sales records into PostgreSQL. A LangGraph AI assistant
+                        answers natural-language questions using read-only, validated SQL.</p>
+                    <a href="https://github.com/Ali-miyan-mc2004/sales-ai-insights-platform" target="_blank" rel="noopener noreferrer" aria-label="View Sales and AI Insights Platform on GitHub"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="images/work-3.png">
+                <img src="images/work-3.png" alt="Cardiovascular Disease Detection System screenshot">
                 <div class="layer">
-                    <h3>Leaf Desease Prediction</h3>
-                    <p>A leaf disease prediction tool powered by AI/ML that detects plant diseases from images.
-                        It helps farmers take early action with accurate, real-time diagnostics</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-
-                    
+                    <h3>Cardiovascular Disease Detection System</h3>
+                    <p>A stacking ensemble of Random Forest, Extra Trees, XGBoost and Logistic Regression
+                        reaches 84.20% accuracy and 0.8359 AUC. SHAP explains the key risk factors.</p>
+                    <a href="https://github.com/Ali-miyan-mc2004/Cardiovascular-Disease-Detection" target="_blank" rel="noopener noreferrer" aria-label="View Cardiovascular Disease Detection System on GitHub"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
-
         </div>
-        <a href="#" class="btn">See more</a>
-
+        <a href="https://github.com/Ali-miyan-mc2004" target="_blank" rel="noopener noreferrer" class="btn">See more</a>
     </div>
-  </div>
-  
-  <!----contact----->
+</div>
 
-  <div id="contact">
+<!----contact----->
+<div id="contact">
     <div class="container">
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p> <i class="fa-solid fa-envelope"></i>miyanmannarichalil@gmail.com</p>
-                <p> <i class="fa-solid fa-phone"></i>+91 9847174117</p>
+                <p><i class="fa-solid fa-envelope"></i><a class="plain-link" href="mailto:miyanmannarichalil@gmail.com">miyanmannarichalil@gmail.com</a></p>
+                <p><i class="fa-solid fa-phone"></i><a class="plain-link" href="tel:+919847174117">+91 9847174117</a></p>
                 <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/ali-miyan-mc-b894b8295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/mi_aaaaaan._/profilecard/?igsh=bGkxc21peHB3OXJ1"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://x.com/ali_miyan_mc?s=21"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://snapchat.com/t/L8SR2gg7"><i class="fa-brands fa-snapchat"></i></i></a>
+                    <a href="https://www.linkedin.com/in/ali-miyan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Ali-miyan-mc2004" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://leetcode.com/u/75tXrRaEjG/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
                 </div>
-                <button onclick="openAndDownloadResume()" class="btn btn2">Download Resume</button>
-
+                <a href="images/my-resume.pdf" download="Ali-Miyan-MC-Resume.pdf" class="btn btn2">Download Resume</a>
             </div>
             <div class="contact-right">
-            <form name="submit-to-google-sheet">
-                <input type="text" name="Name" placeholder="Your Name" required>
-                <input type="email" name="Email" placeholder="Your Email" required>
-                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            <span id="msg"></span>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg" role="status"></span>
             </div>
-            
         </div>
     </div>
     <div class="copyright">
-        <p>© 2025 Miyan Mannarichalil. All rights reserved.</p>
+        <p>© 2026 Ali Miyan M C. All rights reserved.</p>
     </div>
-  </div>
-
-
-  <script>
-    function openAndDownloadResume() {
-      const fileUrl = 'images/my-resume.pdf';
-  
-      // Open PDF in a new tab
-      window.open(fileUrl, '_blank');
-  
-      // Trigger download
-      const link = document.createElement('a');
-      link.href = fileUrl;
-      link.download = 'my-resume.pdf';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    }
-  </script>
-  
+</div>
 
 <script>
-var tablinks = document.getElementsByClassName("tab-links");
-var tabcontents = document.getElementsByClassName("tab-contents");
-function opentab(tabname){
-    for(tablink of tablinks){
-        tablink.classList.remove("active-link");
+    // ----- Tabs -----
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(e, tabname) {
+        for (var i = 0; i < tablinks.length; i++) tablinks[i].classList.remove("active-link");
+        for (var j = 0; j < tabcontents.length; j++) tabcontents[j].classList.remove("active-tab");
+        e.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
     }
-    for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab");
-    }
-    event.currentTarget.classList.add("active-link")
-    document.getElementById(tabname).classList.add("active-tab")
-}   
-</script>
 
-<script>
+    // ----- Mobile menu -----
     var sidemenu = document.getElementById("sidemenu");
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-</script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwUXGcQ3eUGK0e_6WzQtzfeQb8EdvdB6u2ZShcOWmko1Pc2Uz_exdnlvdWfLyXvRV09/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response =>{
-            msg.innerHTML = "Message sent successfully"
-            setTimeout (function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+    function openmenu() { sidemenu.style.right = "0"; }
+    function closemenu() { sidemenu.style.right = "-200px"; }
+    sidemenu.querySelectorAll("a").forEach(function (a) {
+        a.addEventListener("click", closemenu);
+    });
 
-  
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script>
-      // Initialize ScrollReveal
-      ScrollReveal({
-          reset: true,
-          distance: '60px',
-          duration: 1500,
-          delay: 180
-      });
-  
-      ScrollReveal().reveal('.header-text', { origin: 'top' });
-      ScrollReveal().reveal('.about-col-1', { origin: 'left' });
-      ScrollReveal().reveal('.about-col-2', { origin: 'right' });
-      ScrollReveal().reveal('.tab-titles, .tab-contents', { origin: 'bottom', interval: 200 });
-      ScrollReveal().reveal('.services-list div', { origin: 'bottom', interval: 300 });
-      ScrollReveal().reveal('.work', { origin: 'bottom', interval: 300 });
-      ScrollReveal().reveal('.contact-left, .contact-right', { origin: 'left', interval: 300 });
-  </script>
-  
+    // ----- Contact form -> Google Sheet -----
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwUXGcQ3eUGK0e_6WzQtzfeQb8EdvdB6u2ZShcOWmko1Pc2Uz_exdnlvdWfLyXvRV09/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    function showMsg(text, isError) {
+        msg.textContent = text;
+        msg.classList.toggle("error", !!isError);
+        setTimeout(function () { msg.textContent = ""; }, 5000);
+    }
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(function (response) {
+                if (!response.ok) throw new Error("Request failed (" + response.status + ")");
+                showMsg("Message sent successfully", false);
+                form.reset();
+            })
+            .catch(function (error) {
+                console.error('Error!', error.message);
+                showMsg("Could not send your message. Please email me directly.", true);
+            });
+    });
+</script>
+
+<script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+<script>
+    ScrollReveal({
+        reset: false,
+        distance: '60px',
+        duration: 1500,
+        delay: 180
+    });
+
+    ScrollReveal().reveal('.header-text', { origin: 'top' });
+    ScrollReveal().reveal('.about-col-1', { origin: 'left' });
+    ScrollReveal().reveal('.about-col-2', { origin: 'right' });
+    ScrollReveal().reveal('.tab-titles, .tab-contents', { origin: 'bottom', interval: 200 });
+    ScrollReveal().reveal('.services-list div', { origin: 'bottom', interval: 300 });
+    ScrollReveal().reveal('.work', { origin: 'bottom', interval: 300 });
+    ScrollReveal().reveal('.contact-left, .contact-right', { origin: 'left', interval: 300 });
+</script>
 </body>
 </html>
